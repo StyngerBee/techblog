@@ -15,7 +15,7 @@ Comment.init(
             model: 'posted',
             key: 'id'
         }},
-        user_id: {type: DataTypes.INTEGER,
+        userId: {type: DataTypes.INTEGER,
         references: {
             model: 'user',
             key: 'id',
@@ -24,8 +24,7 @@ Comment.init(
     {
         sequelize,
         timestamps: false,
-        freezeTableName: true,
-        
+        freezeTableName: true,    
     }
 );
 
