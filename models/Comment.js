@@ -10,9 +10,9 @@ Comment.init(
 
         createdAt: {type: DataTypes.DATE, allowNull: false, defaultValue: DataTypes.NOW},
 
-        postedId: { type: DataTypes.INTEGER,
+        postId: { type: DataTypes.INTEGER,
         references: {
-            model: 'posted',
+            model: 'post',
             key: 'id'
         }},
         userId: {type: DataTypes.INTEGER,
